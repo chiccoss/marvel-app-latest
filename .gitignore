@@ -256,3 +256,4 @@ fabric.properties
 
 # End of https://www.gitignore.io/api/java,gradle,kotlin,android,androidstudio
 
+/app/src/main/java/fr/sohayb/marvelapp/utils/ConstantsPrivate.kt
