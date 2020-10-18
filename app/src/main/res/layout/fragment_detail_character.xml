@@ -1,48 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.circularreveal.cardview.CircularRevealCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/white">
+    android:layout_marginHorizontal="@dimen/margin_medium"
+    android:layout_marginTop="@dimen/margin_medium"
+    android:backgroundTint="@color/colorPrimary"
+    app:cardCornerRadius="@dimen/margin_xxlarge"
+    android:layout_marginVertical="@dimen/margin_medium"
+    app:cardElevation="20dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/fragmentHomeChangeTafseerInfoCl"
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/fragmentCharacterDetailImage"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:elevation="@dimen/margin_xxlarge"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_margin="@dimen/margin_medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/fragmentHomeChangeTafseerInfoTv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="@dimen/margin_large"
-                android:fontFamily="@font/inter_font"
-                android:gravity="center"
-                android:text="Characters"
-                android:textColor="@color/colorQuartary"
-                android:textSize="@dimen/text_xxlarge"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/itemResultUserProfileTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            tools:text="Nom du personnage"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_medium"
+            android:textStyle="bold"
+            android:lines="1"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragmentCharacterDetailImage" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/itemResultEvaluationNumberTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="Description"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="@dimen/margin_large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/itemResultUserProfileTv"
+            app:layout_constraintBottom_toBottomOf="parent" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/fragmentHomeCharactersListRv"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:listitem="@layout/item_result"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintTop_toBottomOf="@+id/fragmentHomeChangeTafseerInfoCl" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</ScrollView>
+</com.google.android.material.circularreveal.cardview.CircularRevealCardView>

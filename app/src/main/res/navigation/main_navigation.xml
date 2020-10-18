@@ -7,17 +7,26 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:label="Home"
         android:name="fr.sohayb.marvelapp.main.presentation.HomeFragment"
         tools:layout="@layout/fragment_home">
 
-
         <action
-            android:id="@+id/goToTutorialFragment"
+            android:id="@+id/goToDetailFragment"
+            app:destination="@+id/detail_character"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detail_character"
+        android:name="fr.sohayb.marvelapp.main.presentation.CharacterDetailFragment"
+        tools:layout="@layout/fragment_detail_character">
+
+        <argument
+            android:name="character"
+            app:argType="fr.sohayb.marvelapp.main.data.Result" />
     </fragment>
 
 
