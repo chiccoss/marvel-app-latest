@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Marvel App</string>
+
+    <string name="ws_error_unknown_error">Unknown error</string>
+
+    <string name="ws_error_internet_connection">No internet Connection</string>
+
+    <string name="ws_error_error">Erooooooooor</string>
+
+    <string name="ws_error_200">YOU GOOD !</string>
+
+
+
+    <string name="ws_error_limit_greater">Limit greater than 100.</string>
+    <string name="ws_error_limit_invalid_or_below">Limit invalid or below 1.</string>
+    <string name="ws_error_invalid_or_unrecognized_param">Invalid or unrecognized parameter.</string>
+    <string name="ws_error_empty_param">Empty parameter.</string>
+    <string name="ws_error_invalid_unrecognized_ordering_param">Invalid or unrecognized ordering parameter.</string>
+    <string name="ws_error_too_many_values">Too many values sent to a multi-value list filter.</string>
+    <string name="ws_error_value_passed">Invalid value passed to filter.</string>
+
+
+
+
+
+    <string name="reponse_409_1">Missing API Key	</string>
+    <string name="reponse_409_2">Missing Hash</string>
+    <string name="reponse_409_3">Missing Timestamp</string>
+
+
+    <string name="reponse_401_1">Invalid Referer</string>
+    <string name="reponse_401_2">Invalid Hash</string>
+
+    <string name="reponse_405">Method Not Allowed</string>
+
+    <string name="reponse_403">Forbidden</string>
+
+
+
+</resources>
